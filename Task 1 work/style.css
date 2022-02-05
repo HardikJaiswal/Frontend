@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+}
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+		Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	line-height: 1.6;
+	font-size: 18px;
+    overflow: hidden;
+}
+.logo{
+  padding:10px;
+  background-color: rgba(51, 153, 204,255);
+  font-size: 55px;
+  color: white;
+  padding-left: 20px;
+}
+.panel-proerties{
+    background-color: rgb(59, 59, 59);
+    display: flex;
+    flex: row;
+    color: white;
+    justify-content: space-between;
+}
+.contentarea{
+    margin-left: 30px;
+    padding: 20px;
+}
+.panel-proerties ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+.panel-proerties ul li{
+    float: left;
+    padding: 5px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.panel-proerties ul li .one{
+    float: left;
+    padding-left: 10px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.panel-proerties ul li .two{
+    float: left;
+    font-size: 15px;
+    padding-left: 15px;
+    margin-left: 10px;
+}
+.panel-proerties ul li .three{
+    float: left;
+    font-size: 15px;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+img{
+    float: right;
+    margin: 5px;
+    margin-right: 25px;
+}
+.contentarea section{
+    display: inline-block;
+    border-color: gray;
+    border-style: solid;
+    border-width: thin;
+    padding: 5px;
+}
+.contentarea section ul{
+    list-style-type: none;
+}
+.contentarea article{
+    margin-top: 10px;
+}
+.contentarea article p{
+    font-size: medium;
+    line-height: 1.2;
+}
