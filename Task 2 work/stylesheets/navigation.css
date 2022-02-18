@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+}
+body{
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.flexible-page{
+    font-family: 'Trebuchet MS';
+    line-height: 11px;
+    display: flex;
+    justify-content: center;
+}
+.content-area{
+    max-width: 60%;
+    min-width: fit-content;
+}
+.nav-header{
+    color: #dedfe6;
+    display: inline-flex;
+    background-color: #3d5d90;
+    font-size: xx-small;
+    padding: 5px;
+    float: inline-end;
+}
+.nav-header a{
+    text-decoration: none;
+    color: #dedfe6;
+}
+.nav-menu{
+    box-sizing: content-box;
+    padding: 13px 8px;
+    background-color: rgba(20,44,68,0.9);
+    border-style: double;
+    border-width: 1px;
+    box-shadow: inset 0px 0px 1px #dedfe6;
+}
+.nav-menu img{
+    position: absolute;
+    top: 5px;
+    z-index: 10;
+    max-width: 11%;
+    height: auto;
+}
+.nav-menu p{
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    font-weight: 200;
+    color: #feffff;
+    padding-right: 4px;
+}
+.nav-menu a{
+    text-decoration: none;
+    padding: 4px 8px;
+    color: #94c6e1;
+    font-size: 12px;
+}
+#isCurrent,.nav-menu a:hover{
+    background-color: #49687e;
+    border-radius: 3px;
+    color: #feffff;
+}
+.nav-menu ul{
+    list-style-type: none;
+    align-self: flex-end;
+    display: inline-flex;
+    width: 100%;
+    margin: 5px;
+    box-shadow: 1.5;
+}
+.nav-menu ul li{
+    padding: 4px 8px;
+}
+.footer{
+    padding: 2px;
+    color: #e1efff;
+    font-size: x-small;
+    text-align: center;
+    background-color: #29416d;
+}
+.footer a{
+    color:#e1efff;
+}
+.article-outer-wrapper{
+    box-sizing: content-box;
+    background-color: rgba(14,31,54,0.8);
+    padding: 3px;
+}
+.article-middle-wrapper{
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    border-top-width: 0;
+    border-style: inset;
+    border-image-source: linear-gradient(to bottom,#0e1f36,#4b4c53);
+    border-image-slice: 1;
+}
+.article-inner-area{
+    padding: 15px;
+}
