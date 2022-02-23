@@ -4,89 +4,100 @@
         <link rel="stylesheet" href="homepage.css">
     </head>
     <body>
-        <header class="header">
-            <img src="images/logo.png">
-            <p>
-                <a href="#">Welcome Jeffery (Sign Out)</a>
-                |
-                <a href="#">My Account</a>
-                |
-                <a href="#"><img src="images/icon_cart.png"> 999 items - $9999.99 Checkout</a>
-                |
-                <a href="#">Customer Service</a>
-            </p>
-        </header>
+        <div class="flex-container">
+            <header class="header">
+                <img src="images/logo.png">
+                <p>
+                    <a href="#">Welcome Jeffery (Sign Out)</a>
+                    |
+                    <a href="#">My Account</a>
+                    |
+                    <a href="#"><img src="images/icon_cart.png"> 999 items - $9999.99 &nbsp;<span id="checkout">Checkout</span></a>
+                    |
+                    <a href="#" id="header-last">Customer Service</a>
+                </p>
+            </header>
+            <div></div>
+        </div>
         <div class="nav-menu">
-            <a href="#" id="first-menu-item">Dining</a>
-            <a href="#">Crystal</a>
-            <a href="#">By Brand</a>
-            <a href="#">What's new</a>
-            <a href="#">Find a Gift</a>
-            <a href="#">Wedding Ideas</a>
-            <a href="#">Clearance & Special offers</a>
-            <div class="search" id="last-menu-item">
-                <form action="/action_page.php">
-                    <input type="text" placeholder="Search Keyword/Item #" name="search">&nbsp;
-                    <button type="submit">GO</button>
-                </form>
+            <div class="nav-menu-bg">
+                <a href="#" id="firstMenuItem">Dining</a>
+                <a href="#">Crystal</a>
+                <a href="#">By Brand</a>
+                <a href="#">What's new</a>
+                <a href="#">Find a Gift</a>
+                <a href="#">Wedding Ideas</a>
+                <a href="#">Clearance & Special offers</a>
+                <div class="search" id="lastMenuItem">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search Keyword/Item #" name="search" class="search-box">&nbsp;
+                        <button type="submit" class="search-button">GO</button>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="tags">
             <span>
                 &nbsp;&nbsp;&nbsp;Shipping on Orders Over $150
-                &compfn;
+                &emsp;&compfn;&emsp;
                 Holiday Platters
-                &compfn;
+                &emsp;&compfn;&emsp;
                 Celebrate Thanksgiving
             </span>
-            <section>
+            <section class="bridal-registry">
                 <img src="images/bridelRegistry.jpg"> 
                 Bridal Registry
             </section>
         </div>
         <hr class="line">
-        <div class="central-content">
+        <div class="flex-container central-content">
             <div class="tile-1">
-                <img src="images/Recipe.jpg">
+                <img src="images/Recipe.jpg" >
                 <div class="outer-wrapper">
                     <div class="inner-wrapper">
-                        <span class="heading">Dress your table</span><br><br>
+                        <p class="service"><span class="heading">Dress your table</span><br><br>
                         Create a fabulous new look for your next event.
-                        Choose from various styles and ideas.
+                        Choose from various styles and ideas.</p>
                         <br><br>
                         <b>Contemporary</b>
                         <b>Traditional</b>
                         <b>Brunch</b>
                         <b>Themes</b>
                         <b>Buffet</b>
-                        <b id="last-tag">Wine & Cheese</b><br>
+                        <b id="lastTag">Wine & Cheese</b><br><br>
                         <a href="#">See More Dress Your Table Ideas</a>
                     </div>
                 </div>
             </div>
             <div class="tile-2">
                 <div class="tile-2-1">
-                    <span>You'll love our fine stemware collection</span><br>
-                    Fusce suscipit risus id orci accumsan aliquet.<br><br>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    &emsp;&emsp;&emsp;&emsp;
-                    <a href="#">See all stemware</a>
+                    <div class="tile-2-1-text">
+                        <span>You'll love our fine stemware collection</span><br>
+                        Fusce suscipit risus id orci accumsan aliquet.<br><br>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        &emsp;&emsp;&emsp;&emsp;
+                        <a href="#">See all stemware</a>
+                    </div>
+                    <img src="images/promo_glass.png">
                 </div>
-                <img src="images/promo_glass.png">
                 <div class="tile-2-2">
-                    <span>Home accent for the holidays</span><br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    &emsp;&emsp;&emsp;&emsp;
-                    <a href="#">See all home accents</a>
+                    <div class="tile-2-2-text">
+                        <span>Home accent for the holidays</span><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        &emsp;&emsp;&emsp;&emsp;
+                        <a href="#">See all home accents</a>
+                    </div>
+                    <img src="images/promo_plates.png">
                 </div>
-                <img src="images/promo_plates.png">
                 <div class="tile-2-3">
-                    <span>Miaksa clearance<br>sale 20% to 80% off</span><br>
-                    Fusce suscipit risus id orci<br> accumsan aliquet.<br><br>
-                    <a href="#">See all clearance items</a>
+                    <div class="tile-2-3-text">
+                        <span>Miaksa clearance<br>sale 20% to 80% off</span><br>
+                        Fusce suscipit risus id orci<br> accumsan aliquet.<br><br>
+                        <a href="#">See all clearance items</a>
+                    </div>
+                    <img src="images/promo_album.png">
                 </div>
-                <img src="images/promo_album.png">
             </div>
             <div class="footer">
                 <div class="text-left">
@@ -104,7 +115,7 @@
                 <div class="text-right">
                     Sign up to receive special offers & promotions from Mikasa.<br><br>
                     <form action="/action_page.php">
-                        <input type="text" placeholder="Enter your email address" name="search">&nbsp;
+                        <input class="input" type="text" placeholder="Enter your email address" name="search">&nbsp;
                         <button type="submit">SIGN UP</button>
                     </form>
                 </div>
