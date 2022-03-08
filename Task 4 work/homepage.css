@@ -1,0 +1,129 @@
+body{
+  padding:10px;
+  font-family: "Raleway",sans-serif;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(182, 182, 182);
+  align-items: center;
+  padding: 15px 0px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.welcome-message > img{
+  width: 40px;
+  height: 40px;
+}
+.company-detail{
+  padding-left: 1%;
+  font-size: small;
+  width: 250px;
+}
+.company-detail > span,.welcome-message > span{
+  color: #00b1fc;
+  font-size: 25px;
+}
+.article{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.filter-types{
+  font-size: small;
+}
+.filter-types > button{
+  border: none;
+  margin: none;
+  background-color: white;
+}
+#filterByName{
+  display: flex;
+  justify-content: space-between;
+}
+#filterByName > button{
+  background-color: #00b1fc;
+  color: white;
+  margin: 1px;
+  border: none;
+  width: 32px;
+  height: 32px;
+}
+#filterByName > button > img {
+  margin: -7px;
+  padding-top: 3px;
+  width: 100%;
+}
+#filterBy{
+  margin: 0;
+  background-color: white;
+  border: 1px solid #d4d0d0;
+  padding: 5px;
+}
+#searchResult{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border: 1px solid #d4d0d0;
+  padding: 15px;
+  row-gap: 20px;
+  column-gap: 10px;
+  min-height: 350px;
+}
+.advanced-filters{
+  display: flex;
+  justify-content: space-between;
+}
+#clear{
+  color: white;
+  background-color: #69ba00;
+  border: none;
+  padding: 5px 15px;
+}
+#addEmployee{
+  padding: 5px;
+  font-weight: bold;
+  background-color: #00b1fc;
+  border: none;
+  color: white;
+}
+.result{
+  width: 240px;
+  height: 70px;
+  padding: 7px;
+  background-color: #e9e8e8;
+  display: flex;
+  color: #969595;
+}
+.result > img{
+  height: 100%;
+  margin-right: 10px;
+}
+.result > p{
+  font-size: small;
+  margin: 0;
+}
+.result > p > b{
+  font-size: medium;
+  color: rgb(82, 82, 82);
+}
+.result > p > img{
+  height: 11px;
+}
+.form-popup {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  left: 0;
+  top: 0;
+}
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
